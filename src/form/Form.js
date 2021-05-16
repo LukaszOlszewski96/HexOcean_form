@@ -23,7 +23,7 @@ function Form() {
             </div>
             <p className="text3 time">Preparation time:</p>
             <div className="time-field">
-                <input type="time"/>
+                <input type="time"  step="5" min="01:00:00" max="24:00:00" />
             </div>
             
             

@@ -43,9 +43,6 @@
     font-size: 1vw;
     line-height: 2.5vw;
     color: #000000;
-    position: relative;
-    left: 4vw;
-    top: 6vw;
 }
 .text3.time{
     position: relative;
@@ -62,12 +59,12 @@
     display: flex;
     width: 20vw;
     height: auto;
-    top: 6vw;
+    top: 7vw;
     left: 3vw;
 }
 .dishes-box a{
     text-decoration: none;
-    font-size: .7vw;
+    font-size: 1vw;
     color: #ffff;
     background-color: #000000;
     padding-left: 2vw;
@@ -112,15 +109,14 @@
 }
 .input-field {
     position: relative;
-    top:4vw;
+    top:5vw;
     left:4vw;
-    width: 250px;
-    height: 44px;
-    line-height: 44px;
+    width: 15vw;
+    height: auto;
   }
   label {
     position: absolute;
-    top: 0;
+    top: 1vw;
     left: 0;
     margin-left:1vw ;
     width: 100%;
@@ -128,6 +124,7 @@
     transition: 0.2s all;
     cursor: text;
     font-weight:500;
+    font-size: 1vw;
   }
   input {
     width: 100%;
@@ -139,6 +136,7 @@
     border-radius: 2.5vw;
     background-color: rgba(255, 255, 255, 0.185);
     font-weight:500;
+    font-size: 1vw;
   }
   input:invalid {
     outline: 0;
@@ -150,7 +148,7 @@
   input:focus~label,
   input:valid~label {
     font-size: 1vw;
-    top: -2.5vw;
+    top: -1.5vw;
     left:-0vw;
     color: #ffff;
   }
@@ -158,6 +156,10 @@
       position: relative;
       top: 8vw;
       left:4vw;
-      width: 250px;
-      height: 44px;
+      width: 10vw;
+      height: auto;
+      
+  }
+  .time-field input{
+      font-size: 1.3vw;
   }
