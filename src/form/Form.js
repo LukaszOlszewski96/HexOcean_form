@@ -15,11 +15,15 @@ function Form() {
                 <input type="text" id="name" required />
                 <label for="name">Dish name:</label>
             </div>
-            <p className="text3">Type:</p>
+            <p className="text3 type">Type:</p>
             <div className="dishes-box">
                 <a href="#">Pizza</a>
                 <a href="#">Soup</a>
                 <a href="#">Sandwich</a>
+            </div>
+            <p className="text3 time">Preparation time:</p>
+            <div className="time-field">
+                <input type="time"/>
             </div>
             
             
