@@ -60,14 +60,70 @@
 }
 .food-image{
     position: relative;
-    background-color: aqua;
-    top: 10vw;
+    top: 3vw;
     right: 10vw;
     float: right;
     width: auto;
     height: auto;
 }
 .food-image img{
-    width: auto;
-    height: auto;
+    width: 18vw;
+    height: 18vw;
+    z-index: 5;
+    position: relative;
 }
+.food-image span{
+    width: 16vw;
+    height: 20vw;
+    border-radius: 2.5vw;
+    background-color: rgba(255, 255, 255, 0.185);
+    position: absolute;
+    z-index: 4;
+    top:2vw;
+    right: .5vw;
+}
+.food-image p{
+    position: relative;
+    font-size: 1.5vw;
+    font-weight: 700;
+    bottom: 3vw;
+    left: 5vw;
+    z-index: 5;
+}
+.input-field {
+    position: relative;
+    width: 250px;
+    height: 44px;
+    line-height: 44px;
+  }
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #d3d3d3;
+    transition: 0.2s all;
+    cursor: text;
+  }
+  input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #d3d3d3;
+    box-shadow: none;
+    color: #111;
+  }
+  input:invalid {
+    outline: 0;
+  }
+  input:focus,
+  input:valid {
+    border-color: #00dd22;
+  }
+  input:focus~label,
+  input:valid~label {
+    font-size: 14px;
+    top: -24px;
+    color: #00dd22;
+  }
