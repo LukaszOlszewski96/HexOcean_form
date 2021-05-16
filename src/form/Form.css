@@ -37,12 +37,22 @@
     left: 4vw;
     top: 3vw;
 }
+.text3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1vw;
+    line-height: 2.5vw;
+    color: #000000;
+    position: relative;
+    left: 4vw;
+    top: 6vw;
+}
 .dishes-box{
     position: relative;
     display: flex;
     width: 20vw;
     height: auto;
-    top: 3vw;
+    top: 6vw;
     left: 3vw;
 }
 .dishes-box a{
@@ -92,6 +102,8 @@
 }
 .input-field {
     position: relative;
+    top:4vw;
+    left:4vw;
     width: 250px;
     height: 44px;
     line-height: 44px;
@@ -100,30 +112,35 @@
     position: absolute;
     top: 0;
     left: 0;
+    margin-left:1vw ;
     width: 100%;
-    color: #d3d3d3;
+    color: #000000;
     transition: 0.2s all;
     cursor: text;
+    font-weight:500;
   }
   input {
     width: 100%;
     border: 0;
     outline: 0;
-    padding: 0.5rem 0;
-    border-bottom: 2px solid #d3d3d3;
+    padding: 1vw 1vw 1vw 1vw;
     box-shadow: none;
     color: #111;
+    border-radius: 2.5vw;
+    background-color: rgba(255, 255, 255, 0.185);
+    font-weight:500;
   }
   input:invalid {
     outline: 0;
   }
   input:focus,
   input:valid {
-    border-color: #00dd22;
+    border-color: #ffff;
   }
   input:focus~label,
   input:valid~label {
-    font-size: 14px;
-    top: -24px;
-    color: #00dd22;
+    font-size: 1vw;
+    top: -2.5vw;
+    left:-0vw;
+    color: #ffff;
   }

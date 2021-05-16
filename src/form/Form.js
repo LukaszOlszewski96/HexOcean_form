@@ -15,6 +15,7 @@ function Form() {
                 <input type="text" id="name" required />
                 <label for="name">Dish name:</label>
             </div>
+            <p className="text3">Type:</p>
             <div className="dishes-box">
                 <a href="#">Pizza</a>
                 <a href="#">Soup</a>
