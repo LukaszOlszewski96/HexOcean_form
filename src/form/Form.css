@@ -1,5 +1,6 @@
 .conteiner-form{
    position: absolute;
+   display: block;
    z-index: 2;
    width: 80vw;
    height: 80%;
@@ -23,7 +24,7 @@
     height:2px;
     background-color: #000000;
     position: absolute;
-    top: 30px;
+    top: 1.5vw;
     left: 1px;
 }
 .text2{
@@ -35,4 +36,38 @@
     position: relative;
     left: 4vw;
     top: 3vw;
+}
+.dishes-box{
+    position: relative;
+    display: flex;
+    width: 20vw;
+    height: auto;
+    top: 3vw;
+    left: 3vw;
+}
+.dishes-box a{
+    text-decoration: none;
+    font-size: .7vw;
+    color: #ffff;
+    background-color: #000000;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: .7vw;
+    padding-bottom: .7vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 2vw;
+}
+.food-image{
+    position: relative;
+    background-color: aqua;
+    top: 10vw;
+    right: 10vw;
+    float: right;
+    width: auto;
+    height: auto;
+}
+.food-image img{
+    width: auto;
+    height: auto;
 }
