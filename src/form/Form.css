@@ -1,0 +1,38 @@
+.conteiner-form{
+   position: absolute;
+   z-index: 2;
+   width: 80vw;
+   height: 80%;
+   top:10%;
+   left:10vw;
+   background: radial-gradient(101.53% 98.56% at 0% 1.44%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.36) 0.01%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(100px);
+    border-radius: 30px;
+}
+.text1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1vw;
+    color: #000000;
+    position: relative;
+    left: 4vw;
+    top: 1vw;
+}
+.text1 span{
+    width: 2vw;
+    height:2px;
+    background-color: #000000;
+    position: absolute;
+    top: 30px;
+    left: 1px;
+}
+.text2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    color: #000000;
+    position: relative;
+    left: 4vw;
+    top: 3vw;
+}
