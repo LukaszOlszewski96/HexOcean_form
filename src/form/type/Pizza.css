@@ -87,14 +87,14 @@
     -webkit-appearance: none;
     background: rgba(255, 255, 255, 0.185);
     outline: none;
-    border-radius: 15px;
+    border-radius: 1vw;
     overflow: hidden;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
   }
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 15px;
-    height: 15px;
+    width: 1vw;
+    height: 1vw;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.342);
     cursor: pointer;

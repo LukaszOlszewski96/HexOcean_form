@@ -3,6 +3,7 @@ import "./Form.css";
 import Pizza from "./type/Pizza";
 import Soup from "./type/Soup";
 import Sandwich from "./type/Sandwich";
+import Dishes from './type/Dishes';
 
 function Form() {
 
@@ -17,7 +18,8 @@ function Form() {
         <form className="conteiner-form">
             {dish === "Pizza" && <Pizza/>}
             {dish === "Soup" && <Soup/>}
-            {dish === "Sandwitch" && <Sandwich/>}
+            {dish === "Sandwich" && <Sandwich/>}
+            {dish === "Dishes" && <Dishes/>}
             
             <p className="text1">Menu<span></span></p>
             <p className="text2">Delicious<br/> Food is Waiting<br/> For you</p>

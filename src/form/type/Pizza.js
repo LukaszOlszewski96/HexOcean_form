@@ -5,6 +5,12 @@ import "./Pizza.css";
 
 
 class Pizza extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      value: "0"
+    };
+  }
   increment = () => {
     this.props.dispatch({
       type: "INCREMENT"
@@ -17,7 +23,7 @@ class Pizza extends React.Component {
     });
   };
   
- 
+  
 
   render(){
     return (
@@ -34,7 +40,6 @@ class Pizza extends React.Component {
                 <div className="vertical_form">
                     <p className="text4">Diameter:</p>
                     <input className="slider" type="range" defaultValue={0} min="0" max="50" step="1"></input>
-                    <p className="diameter" ></p>
                 </div>
             </div>
     );
