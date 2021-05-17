@@ -1,3 +1,4 @@
+
 .conteiner-form{
    position: absolute;
    display: block;
@@ -35,7 +36,7 @@
     color: #000000;
     position: relative;
     left: 4vw;
-    top: 3vw;
+    top: 1.5vw;
 }
 .text3{
     font-style: normal;
@@ -47,76 +48,45 @@
 .text3.time{
     position: relative;
     left: 4vw;
-    top: 8vw;
+    top: 3vw;
 }
 .text3.type{
     position: relative;
     left: 4vw;
-    top: 6vw;
+    top: 3vw;
 }
 .dishes-box{
     position: relative;
     display: flex;
-    width: 20vw;
+    width: 10vw;
     height: auto;
-    top: 7vw;
-    left: 3vw;
+    top: 2.5vw;
+    left: 4vw;
 }
-.dishes-box a{
-    text-decoration: none;
-    font-size: 1vw;
-    color: #ffff;
-    background-color: #000000;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-top: .7vw;
-    padding-bottom: .7vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    border-radius: 2vw;
-}
-.food-image{
-    position: relative;
-    top: 3vw;
-    right: 10vw;
-    float: right;
-    width: auto;
-    height: auto;
-}
-.food-image img{
-    width: 18vw;
-    height: 18vw;
-    z-index: 5;
-    position: relative;
-}
-.food-image span{
-    width: 16vw;
-    height: 20vw;
+.dishes-box select{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 1vw 1vw 1vw 1vw;
+    box-shadow: none;
+    color: #111;
     border-radius: 2.5vw;
     background-color: rgba(255, 255, 255, 0.185);
-    position: absolute;
-    z-index: 4;
-    top:2vw;
-    right: .5vw;
+    font-weight:500;
+    font-size: 1vw;
 }
-.food-image p{
-    position: relative;
-    font-size: 1.5vw;
-    font-weight: 700;
-    bottom: 3vw;
-    left: 5vw;
-    z-index: 5;
-}
+
+
 .input-field {
     position: relative;
-    top:5vw;
+    top:3vw;
     left:4vw;
     width: 15vw;
     height: auto;
   }
   label {
     position: absolute;
-    top: 1vw;
+    top: 0.8vw;
     left: 0;
     margin-left:1vw ;
     width: 100%;
@@ -135,7 +105,7 @@
     color: #111;
     border-radius: 2.5vw;
     background-color: rgba(255, 255, 255, 0.185);
-    font-weight:500;
+    font-weight:600;
     font-size: 1vw;
   }
   input:invalid {
@@ -154,12 +124,13 @@
   }
   .time-field{
       position: relative;
-      top: 8vw;
+      top: 2.5vw;
       left:4vw;
       width: 10vw;
       height: auto;
       
   }
   .time-field input{
-      font-size: 1.3vw;
+      font-size: 1vw;
   }
+  

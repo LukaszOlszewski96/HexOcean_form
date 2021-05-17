@@ -1,30 +1,24 @@
 import React from 'react';
 import "./Form.css";
+import Pizza from "./type/Pizza";
+import Soup from "./type/Soup";
+import Sandwich from "./type/Sandwich";
 
 function Form() {
 
-    const [showType,setType] = React.useState("Pizza");
+    const [dish, setDish] = React.useState('Dishes');
 
-    const openPizza=()=>{
-        console.log("Pizza");
-        setType("Pizza");
+    const handleChange = (event) =>{
+        setDish(event.target.value);
     }
-    const openSoup=()=>{
-        console.log("Soup")
-        setType("Soup");
-    }
-    const openSandwitch=()=>{
-        console.log("Sandwitch");
-        setType("Sandwitch");
-    }
+
 
     return (
         <form className="conteiner-form">
-            <div className="food-image">
-                <img src="\image\pizza.png"/>
-                <span></span>
-                <p>Salami Pizza</p>
-            </div>
+            {dish === "Pizza" && <Pizza/>}
+            {dish === "Soup" && <Soup/>}
+            {dish === "Sandwitch" && <Sandwich/>}
+            
             <p className="text1">Menu<span></span></p>
             <p className="text2">Delicious<br/> Food is Waiting<br/> For you</p>
             <div class="input-field">
@@ -33,9 +27,12 @@ function Form() {
             </div>
             <p className="text3 type">Type:</p>
             <div className="dishes-box">
-                <a onClick={openPizza} href="#">Pizza</a>
-                <a onClick={openSoup} href="#">Soup</a>
-                <a onClick={openSandwitch} href="#">Sandwich</a>
+                <select value={dish} onChange={handleChange} name="dishes">
+                    <option value="Pizza">Pizza</option>
+                    <option value="Soup">Soup</option>
+                    <option value="Sandwich">Sandwich</option>
+                    <option value="Dishes">Dishes</option>
+                </select>
             </div>
             <p className="text3 time">Preparation time:</p>
             <div className="time-field">
@@ -48,4 +45,3 @@ function Form() {
 }
 
 export default Form;
-

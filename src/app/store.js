@@ -1,8 +1,24 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
 
-export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
-});
+
+let initialState = {count: 0}
+
+
+
+
+function reducer(state = initialState, action) {
+  if(action.type === 'INCREMENT') {
+    return {
+      count: state.count + 1
+    };
+  }
+ 
+  if(action.type === 'DECREMENT' && state.count>0) {
+    return {
+      count: state.count - 1
+    }
+  }
+
+  return state;
+}
+
+export default reducer;
