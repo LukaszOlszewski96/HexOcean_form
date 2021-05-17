@@ -2,6 +2,22 @@ import React from 'react';
 import "./Form.css";
 
 function Form() {
+
+    const [showType,setType] = React.useState("Pizza");
+
+    const openPizza=()=>{
+        console.log("Pizza");
+        setType("Pizza");
+    }
+    const openSoup=()=>{
+        console.log("Soup")
+        setType("Soup");
+    }
+    const openSandwitch=()=>{
+        console.log("Sandwitch");
+        setType("Sandwitch");
+    }
+
     return (
         <form className="conteiner-form">
             <div className="food-image">
@@ -17,9 +33,9 @@ function Form() {
             </div>
             <p className="text3 type">Type:</p>
             <div className="dishes-box">
-                <a href="#">Pizza</a>
-                <a href="#">Soup</a>
-                <a href="#">Sandwich</a>
+                <a onClick={openPizza} href="#">Pizza</a>
+                <a onClick={openSoup} href="#">Soup</a>
+                <a onClick={openSandwitch} href="#">Sandwich</a>
             </div>
             <p className="text3 time">Preparation time:</p>
             <div className="time-field">
