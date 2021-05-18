@@ -13,10 +13,6 @@ Project created for recruitment. Shows a card for writing dishes in a restaurant
 - HTML
 - JavaScript
 
-## Available Scripts
-
-In the project directory, you can run:
-
 ## Want Download?
 
 If you want to develop a project, you can download it by entering the command:
