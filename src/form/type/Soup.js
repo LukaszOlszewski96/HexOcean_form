@@ -4,7 +4,9 @@ import "./Soup.css"
 
 function Soup() {
 
-    const[showScale, setScale]= React.useState();
+    const[showScale, setScale]= React.useState(1);
+    
+
 
     const onClickScale1=()=>{
         setScale(1)
@@ -42,8 +44,7 @@ function Soup() {
         <div className="food-image">
             <img className="soup" src="\image\soup.png"/>
             <span className="span"></span>
-            <p className="tittle-soup">Rosół</p>
-            <div className="horizontal_form">
+            <div className="form-bottom">
                     <p className="text4">Spices scale: {showScale}</p>
                     <a className="spices 1" onClick={onClickScale1}><GiChiliPepper/></a>
                     <a className="spices 2" onClick={onClickScale2}><GiChiliPepper/></a>

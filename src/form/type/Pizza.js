@@ -1,16 +1,34 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
+
 import "./Pizza.css";
+
 
 
 
 class Pizza extends React.Component {
   constructor(props){
     super(props);
+
     this.state = {
-      value: "0"
+      value: 0
     };
+
   }
+  diameterUp = () =>{
+    this.setState({value: this.state.value + 0.1})
+  }
+  diameterDw = () =>{
+    if(this.state.value > 0.0){
+    this.setState({value: this.state.value - 0.1})
+  }}
+  diameterUp2 = () =>{
+    this.setState({value: this.state.value + 10})
+  }
+  diameterDw2 = () =>{
+    if(this.state.value >= 10){
+    this.setState({value: this.state.value - 10})
+  }}
   increment = () => {
     this.props.dispatch({
       type: "INCREMENT"
@@ -30,16 +48,19 @@ class Pizza extends React.Component {
             <div className="food-image">
                 <img src="\image\pizza.png"/>
                 <span className="span"></span>
-                <p className="tittle-dish">Salami Pizza</p>
-                <div className="vertical_form">
+                <div className="form-bottom">
                     <p className="text4">Number of slices:</p>
-                    <button onClick={this.decrement} className="btn ">-</button>
-                    <input  className="number-input" value={this.props.count}></input>
-                    <button onClick={this.increment} className="btn ">+</button>
+                    <button type="button" onClick={this.decrement} className="btn ">-</button>
+                    <input  className="number-input" value={this.props.count} required></input>
+                    <button type="button" onClick={this.increment} className="btn ">+</button>
                 </div>
-                <div className="vertical_form">
+                <div className="form-bottom">
                     <p className="text4">Diameter:</p>
-                    <input className="slider" type="range" defaultValue={0} min="0" max="50" step="1"></input>
+                    <button className="buttonTen1" type="button" onClick={this.diameterDw2}>-10</button>
+                    <button className="button" type="button" onClick={this.diameterDw}>-</button>
+                    <input  className="number-input2" value={this.state.value} required></input>
+                    <button className="button" type="button" onClick={this.diameterUp} >+</button>
+                    <button className="buttonTen2" type="button" onClick={this.diameterUp2}>+10</button>
                 </div>
             </div>
     );

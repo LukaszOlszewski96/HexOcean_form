@@ -1,136 +1,176 @@
-
 .conteiner-form{
-   position: absolute;
-   display: block;
-   z-index: 2;
-   width: 80vw;
-    height: 40vw;
-   top:10%;
-   left:10vw;
-   background: radial-gradient(101.53% 98.56% at 0% 1.44%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.36) 0.01%, rgba(255, 255, 255, 0) 100%);
-    backdrop-filter: blur(100px);
-    border-radius: 30px;
+  position: absolute;
+  display: block;
+  z-index: 2;
+  width: 80vw;
+   height: 40vw;
+  top:10%;
+  left:10vw;
+  background: radial-gradient(101.53% 98.56% at 0% 1.44%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.36) 0.01%, rgba(255, 255, 255, 0) 100%);
+   backdrop-filter: blur(100px);
+   border-radius: 30px;
 }
 .text1{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1vw;
-    color: #000000;
-    position: relative;
-    left: 4vw;
-    top: 1vw;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 1vw;
+   color: #000000;
+   position: relative;
+   left: 4vw;
+   top: 1vw;
 }
 .text1 span{
-    width: 2vw;
-    height:2px;
-    background-color: #000000;
-    position: absolute;
-    top: 1.5vw;
-    left: 1px;
+   width: 2vw;
+   height:2px;
+   background-color: #000000;
+   position: absolute;
+   top: 1.5vw;
+   left: 1px;
 }
 .text2{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2vw;
-    line-height: 2.5vw;
-    color: #000000;
-    position: relative;
-    left: 4vw;
-    top: 1.5vw;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 2vw;
+   line-height: 2.5vw;
+   color: #000000;
+   position: relative;
+   left: 4vw;
+   top: 1.5vw;
 }
 .text3{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1vw;
-    line-height: 2.5vw;
-    color: #000000;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 1vw;
+   line-height: 2.5vw;
+   color: #000000;
 }
 .text3.time{
-    position: relative;
-    left: 4vw;
-    top: 3vw;
+   position: relative;
+   left: 4vw;
+   top: 3vw;
 }
 .text3.type{
-    position: relative;
-    left: 4vw;
-    top: 3vw;
+   position: relative;
+   left: 4vw;
+   top: 3vw;
 }
 .dishes-box{
-    position: relative;
-    display: flex;
-    width: 10vw;
-    height: auto;
-    top: 2.5vw;
-    left: 4vw;
+   position: relative;
+   display: flex;
+   width: 10vw;
+   height: auto;
+   top: 2.5vw;
+   left: 4vw;
 }
 .dishes-box select{
-    width: 100%;
-    border: 0;
-    outline: 0;
-    padding: 1vw 1vw 1vw 1vw;
-    box-shadow: none;
-    color: #111;
-    border-radius: 2.5vw;
-    background-color: rgba(255, 255, 255, 0.185);
-    font-weight:500;
-    font-size: 1vw;
+   width: 100%;
+   border: 0;
+   outline: 0;
+   padding: 1vw 1vw 1vw 1vw;
+   box-shadow: none;
+   color: #111;
+   border-radius: 2.5vw;
+   background-color: rgba(255, 255, 255, 0.185);
+   font-weight:500;
+   font-size: 1vw;
 }
 
 
 .input-field {
-    position: relative;
-    top:3vw;
-    left:4vw;
-    width: 15vw;
-    height: auto;
-  }
-  label {
-    position: absolute;
-    top: 0.8vw;
-    left: 0;
-    margin-left:1vw ;
-    width: 100%;
-    color: #000000;
-    transition: 0.2s all;
-    cursor: text;
-    font-weight:500;
-    font-size: 1vw;
-  }
-  input {
-    width: 100%;
-    border: 0;
-    outline: 0;
-    padding: 1vw 1vw 1vw 1vw;
-    box-shadow: none;
-    color: #111;
-    border-radius: 2.5vw;
-    background-color: rgba(255, 255, 255, 0.185);
-    font-weight:600;
-    font-size: 1vw;
-  }
-  input:invalid {
-    outline: 0;
-  }
-  input:focus,
-  input:valid {
-    border-color: #ffff;
-  }
-  input:focus~label,
-  input:valid~label {
-    font-size: 1vw;
-    top: -1.5vw;
-    left:-0vw;
-    color: #ffff;
-  }
-  .time-field{
-      position: relative;
-      top: 2.5vw;
-      left:4vw;
-      width: 10vw;
-      height: auto;
-      
-  }
-  .time-field input{
-      font-size: 1vw;
-  }
-  
+   position: relative;
+   top:3vw;
+   left:4vw;
+   width: 15vw;
+   height: auto;
+ }
+ label {
+   position: absolute;
+   top: 0.8vw;
+   left: 0;
+   margin-left:1vw ;
+   width: 100%;
+   color: #000000;
+   transition: 0.2s all;
+   cursor: text;
+   font-weight:500;
+   font-size: 1vw;
+ }
+ input {
+   width: 100%;
+   border: 0;
+   outline: 0;
+   padding: 1vw 1vw 1vw 1vw;
+   box-shadow: none;
+   color: #111;
+   border-radius: 2.5vw;
+   background-color: rgba(255, 255, 255, 0.185);
+   font-weight:600;
+   font-size: 1vw;
+ }
+ input:invalid {
+   outline: 0;
+ }
+ input:focus,
+ input:valid {
+   border-color: #ffff;
+ }
+ input:focus~label,
+ input:valid~label {
+   font-size: 1vw;
+   top: -1.5vw;
+   left:-0vw;
+   color: #ffff;
+ }
+ .time-field{
+     position: relative;
+     top: 2.5vw;
+     left:4vw;
+     width: 8vw;
+     height: auto;
+     
+ }
+ .time-field input{
+     font-size: 1vw;
+     cursor: pointer;
+ }
+ select{
+ 
+  content: 'O';
+   outline: 0;
+   box-shadow: none;
+   border: 0 !important;
+   background: #2c3e50;
+   background-image: none;
+   cursor: pointer;
+ }
+ option{
+   background-color: rgba(80, 74, 74, 0.356);
+ }
+ .accept-btn{
+   background-color: rgba(255, 255, 255, 0.185);
+   border: 0;
+   outline: 0;
+   padding-top:1vw;
+   padding-bottom: 1vw;
+   padding-left:  2vw;
+   padding-right: 2vw;
+   margin: 0;
+   border-radius: 2vw;
+   color: #ffff;
+   font-size: 1vw;
+   position: relative;
+   right: 2vw;
+   top:2vw;
+   cursor: pointer;
+   float:right;
+ }
+
+ .accept-btn:hover{
+   background-color: rgba(255, 255, 255, 0.5);
+ }
+.icon-arrow{
+  font-size: 2vw;
+  position: relative;
+  top:1vw;
+  right: 3vw;
+}

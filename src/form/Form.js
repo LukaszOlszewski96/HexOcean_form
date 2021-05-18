@@ -4,10 +4,15 @@ import Pizza from "./type/Pizza";
 import Soup from "./type/Soup";
 import Sandwich from "./type/Sandwich";
 import Dishes from './type/Dishes';
+import {FiArrowDownCircle} from 'react-icons/fi';
+
+
+
 
 function Form() {
 
     const [dish, setDish] = React.useState('Dishes');
+   
 
     const handleChange = (event) =>{
         setDish(event.target.value);
@@ -25,11 +30,12 @@ function Form() {
             <p className="text2">Delicious<br/> Food is Waiting<br/> For you</p>
             <div class="input-field">
                 <input type="text" id="name" required />
-                <label for="name">Dish name:</label>
+                <label for="name" >Dish name:</label>
             </div>
             <p className="text3 type">Type:</p>
             <div className="dishes-box">
-                <select value={dish} onChange={handleChange} name="dishes">
+                <select value={dish} onChange={handleChange} name="dishes" required>
+                    <FiArrowDownCircle className="icon-arrow"/>
                     <option value="Pizza">Pizza</option>
                     <option value="Soup">Soup</option>
                     <option value="Sandwich">Sandwich</option>
@@ -38,12 +44,12 @@ function Form() {
             </div>
             <p className="text3 time">Preparation time:</p>
             <div className="time-field">
-                <input type="time"  step="5" min="01:00:00" max="24:00:00" />
+                <input type="time"  step="5"/>
             </div>
-            
-            
+            <button className="accept-btn" type="submit">Accept</button>
         </form>
     )
 }
+
 
 export default Form;

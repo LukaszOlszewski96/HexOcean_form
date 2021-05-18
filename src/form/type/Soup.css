@@ -1,50 +1,11 @@
-.food-image{
-    position: relative;
-    top: 3vw;
-    right: 10vw;
-    float: right;
-    width: auto;
-    height: auto;
-}
-.food-image img{
-    width: 18vw;
-    height: 18vw;
-    z-index: 5;
-    position: relative;
-}
-.food-image .span{
-    width: 16vw;
-    height: 17vw;
-    border-radius: 2.5vw;
-    background-color: rgba(255, 255, 255, 0.185);
-    position: absolute;
-    z-index: 4;
-    top:3vw;
-    right: 2vw;
-}
-.horizontal_form{
-    position: relative;
-    top:1vw;
-}
 .soup{
-    right:1vw;
-    bottom:1vw;
+    
 }
 .spices{
-    font-size: 1.5vw;
-    position: relative;
-    color:#ffff;
-    top: 1vw;
+    font-size: 2vw;
+    color:#ffff;    
+    cursor: pointer;
 }
 .spices:hover{
     color:red;
-}
-.tittle-soup{
-    position: relative;
-    font-size: 1.5vw;
-    font-weight: 600;
-    bottom: 3vw;
-    z-index: 5;
-    text-align: center;
-
 }
