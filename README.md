@@ -17,6 +17,14 @@ Project created for recruitment. Shows a card for writing dishes in a restaurant
 
 In the project directory, you can run:
 
+## Want Download?
+
+If you want to develop a project, you can download it by entering the command:
+
+### `git clone https://github.com/LukaszOlszewski96/HexOcean_form.git`
+
+Then you can run it with the command npm:
+
 ### `npm start`
 
 Runs the app in the development mode.<br />
